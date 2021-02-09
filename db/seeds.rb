@@ -12,7 +12,7 @@ end
 
 puts 'Creating movies...'
 sample["movies"].each do |movie|
-  Movie.create! movie.slice("title", "year", "synopsis").merge(director: directors[movie["director_slug"]])
+  Movie.create! movie.slice("title", "year", "syllabus").merge(director: directors[movie["director_slug"]])
 end
 
 puts 'Creating tv shows...'
